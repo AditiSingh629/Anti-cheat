@@ -21,8 +21,6 @@ function draw(){
 f1.display();
 
 image(cr,displayWidth/2 - 20,displayHeight/2 - 350,200,150)
-textSize(30);
-  textFont('Georgia');
-  text(this.quote,displayWidth/2 - 50,displayHeight/2 + 100);
+
 }
 

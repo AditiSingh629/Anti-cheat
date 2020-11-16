@@ -15,7 +15,8 @@ class form {
    
   
       display(){
-        
+        textSize(30);
+  text(this.quote,displayWidth/2 - 50,displayHeight/2 + 100);
         this.login_student.style('font-size', '24px', 'color', 'black');
         this.login_student.style('background-color', "#C8FFFF");
         this.login_student.position(displayWidth/2 + 120,displayHeight/2 - 50) ;
@@ -47,7 +48,7 @@ push();
    
     // this.id.hide();
     // this.password.hide();
-    image(bg,displayWidth/2 + 90,displayHeight/2 - 200,165,140)
+   
     this.login_Teacher.hide();
     this.login_student.hide();
     sLogin = new studentLogin();
