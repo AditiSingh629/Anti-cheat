@@ -21,16 +21,7 @@ function preload(){
    'animation/st/stud10.png','animation/st/stud11.png','animation/st/stud12.png')
 }
 function setup(){
-  if(mousePressedOver(cam)){
-    cam.changeImage(ca2)
-    var capture;
-
-      createCanvas(480, 480);
-      capture = createCapture(VIDEO);
-      capture.hide();
-    
-      image(capture, displayWidth/2-200,displayHeight/2-200,100,100);
-  }
+ 
   // frameRate(10);
 createCanvas(displayWidth - 20, displayHeight - 30);
 il = createSprite(displayWidth/2 + 10,displayHeight/2 - 280,200,150);
@@ -40,10 +31,19 @@ f1 = new form();
 fill("blue");
 
 cam = createSprite(displayWidth/4 - 260,displayHeight/2 - 80,100,100)
-cam.addImage(ca1)
+// cam.addImage(ca1)
+cam.addImage(ca2)
+
 cam.visible = false;
 cam.scale = 0.4;
-
+if(mousePressedOver(cam)){
+  cam.changeImage(ca2)
+  var capture;
+    capture = createCapture(VIDEO);
+    // capture.hide();
+  
+    image(capture, displayWidth/2-200,displayHeight/2-200,100,100);
+}
 tr1 = createSprite(displayWidth/2 - 80,displayHeight/2 - 120)
 st1= createSprite(displayWidth/2 + 170,displayHeight/2 - 120)
 tr1.addImage('teach',tr);
@@ -58,7 +58,7 @@ tr1.scale = 0.7;
 
 
 function draw(){
-  let display = touches.length + ' touches';
+ 
  
 background(rgb(142, 237, 200))
 f1.display();

@@ -40,8 +40,8 @@ this.start.position(displayWidth/2,displayHeight/2 + 220)
 
 
 this.start.mousePressed(()=>{
-  cam.visible = true;
- 
+  
+  // filter(INVERT);
   var fs = fullscreen(); 
       
   // Call to fullscreen function 

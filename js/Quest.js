@@ -1,16 +1,19 @@
 var Marks = 0;
 class Quest{
     constructor(){
+this.re1 = createElement('h2')
+this.re2 = createElement('h2')
 
-   }
-    display(){
         this.q1 = createElement('h2')
         this.q2 = createElement('h2')
         this.q3 = createElement('h2')
         this.q4 = createElement('h2')
         this.q5 = createElement('h2')
         this.q6 = createElement('h2')
-        
+       this.capture = createCapture(VIDEO)
+  image(this.capture,displayWidth/2 - 200,displayHeight/2 -200,200,200);
+
+  cam.visible = true;
                 this.radio = createRadio()
         this.radio.option('Universal Radio Locator',1)
         this.radio.option('Uniform Resource Locatant',2)
@@ -43,8 +46,23 @@ class Quest{
                                         this.radio6.option('9001')
                                                 this.radio6.option('1')
         
+   }
+    display(){
+       
         
-                                                
+            console.log(Marks)
+            // if(this.radio.value()== '1'){
+            //     Marks = Marks +1;
+            // }
+            // if(this.radio2.value()== '1'){
+            //     Marks = Marks +1;
+            // }
+            // if(this.radio3.value()== '3'){
+            //     Marks = Marks +1;
+            // }
+            // if(this.radio4.value()== '2'){
+            //     Marks = Marks +1;
+            // }               
                 this.q1.html('Q1) What is full form of U.R.L?')
                 this.q1.position(displayWidth/2- 150,displayHeight/2 - 330)
                 this.radio.position(displayWidth/2- 250,displayHeight/2 - 270)
@@ -54,6 +72,7 @@ class Quest{
                 this.q3.html('Q3)Capital of Vietnam?')
                 this.q3.position(displayWidth/2- 150,displayHeight/2 - 170)
                 this.radio3.position(displayWidth/2- 250,displayHeight/2 - 110)
+                console.log(Marks)
         
                 this.q4.html('Q4)Height of Mt. Everest?')
                 this.q4.position(displayWidth/2- 150,displayHeight/2 - 90)
@@ -88,14 +107,19 @@ class Quest{
         this.q4.hide()
         this.q5.hide()
         this.q6.hide()
-        fi1.hide()
-        if(radio.value()== '1'){
-            Marks = Marks +1;
-            console.log(Marks)
-        }
-        if(radio1.value()== '1'){
-            Marks = Marks +1;
-        }
+fi1.hide()
+this.capture.hide()
+        // if(mousePressedOver(cam)){
+        //     var captur = createCapture()
+        // }
+    //   clear()
+    // capture.hide()
+       cam.visible = 'false'
+    this.re1.html("THANK YOU FOR GIVING TEST.")
+    this.re2.html("RESULTS AWAITED.")
+    this.re1.position(displayWidth/2,displayHeight/2)
+    this.re2.position(displayWidth/2,displayHeight/2 + 50)
+
         })
         
     }

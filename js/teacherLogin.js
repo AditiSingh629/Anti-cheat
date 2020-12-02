@@ -57,6 +57,11 @@ test.mousePressed(()=>{
     test.hide();
     textAlign(CENTER);
     background(200);
+
+var in1 = createElement('h2')
+in1.html('PLEASE CREATE THE PAPER FOR YOUR PREFERED LANGUAGE.')
+in1.position(displayWidth/2 - 200,displayHeight/2 -200 )
+in1.style('width','100px')
         var q1 =  createInput('').attribute('placeholder','Type your question here.')
         q1.style("font-size",'30px')
          q1.position(displayWidth/2,displayHeight/2 - 220)
@@ -81,6 +86,7 @@ test.mousePressed(()=>{
             op3.hide() 
             op4.hide() 
 st.hide()
+in1.hide()
 st1.hide()
 var set = createButton("Settings")
 set.position(displayWidth/2,displayHeight/2 - 220)
@@ -131,7 +137,7 @@ var slider5 = createSlider(0, 50, 50,50);
             sl6.html('Shuffle Questions.')
             sl6.position(displayWidth/2 - 250,displayHeight/2 )
 text(this.slid4,displayWidth/2 - 250,displayHeight/2 - 150);
-console.log(this.slid4);
+console.log('3');
 set1.mousePressed(()=>{
     var b2 = new Button();
     b2.display();
