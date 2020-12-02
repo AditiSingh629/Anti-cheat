@@ -65,7 +65,6 @@ q1.hide()
 q1.hide()
     this.login_Teacher.hide();
     this.login_student.hide();
-    q1.hide();
     sLogin = new studentLogin();
     sLogin.display();
     })

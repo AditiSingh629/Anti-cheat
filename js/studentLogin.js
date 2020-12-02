@@ -38,21 +38,25 @@ this.login2.mousePressed( ()=>{
         this.password2.hide();
         this.name2.hide();
         this.login2.hide();
-        var studName = this.name2.value();
-        console.log(studName);
+       
+    
         var t1 = new test();
 t1.display()
     })
         
-            // this.greeting.html("Good Luck For Your Exam " + studName);
-            //       this.greeting.position(displayWidth / 2 - 70, displayHeight / 4 - 75);
+            
            
                   
   
  
     }
   
-          
+    // fetch_name(){
+    //     var studName = this.name2.value();
+    //     console.log(studName);
+    //     this.greeting.html("Good Luck For Your Exam " + studName);
+    //       this.greeting.position(displayWidth / 2 - 70, displayHeight / 4 - 75);
+    // }
         
     }
    

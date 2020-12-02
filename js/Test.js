@@ -7,7 +7,8 @@ constructor(){
 }
 
     display(){
-        var test1 = createButton('VIEW MY TEST')
+  
+        var test1 = createButton('VIEW MY TESTS')
                   test1.position(displayWidth / 2 - 70, displayHeight / 2 - 100)
                  
                   test1.style('background-color','Yellow')
@@ -32,10 +33,10 @@ constructor(){
                     this.warn.hide()
                     this.warn2.hide()
 demo.hide()
-                 b1 = new Button();
+              var   b1 = new Button();
                  b1.display();
                   })
                 })
-                drawSprites();
+                // drawSprites();
         }
     }
